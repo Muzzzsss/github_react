@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #131d2f;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  margin-bottom: 25px;
+}
+.container {
+  padding: 30px 30px;
+  border-radius: 10px;
+  max-width: 45rem;
+}
+.searchContainer {
+  background: #1e2b48;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchContainer input {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+.searchContainer button {
+  background-color: #007bff!important;
+  color: white!important;
+  padding: 5px 10px!important;
+  border: none!important;
+  border-radius: 8px!important;
+}
+#detailBtn{
+  background-color: #007bff!important;
+  color: white!important;
+  padding: 5px 10px!important;
+  border: none!important;
+  border-radius: 8px!important;
+  margin-top: 25px;
+}
+#loader{
+  text-align: center;
+}
+.detailsContainer {
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #1e2b48;
+  padding: 20px 25px;
+}
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#image{
+  display: flex;
+  align-self: center;
+}
+.profile-image-icon {
+  height: 100%;
+  width: 100%;
+}
+.profile-details {
+  padding: 10px;
+  width: 30rem;
+}
+.username {
+  font-size: 13px;
+  color: #007bff;
+}
+.bio {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.stats {
+  background: #141d2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.media p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.media-name {
+  color: gainsboro;
+  font-size: 14px;
+  margin-left: 4px;
+  line-break: anywhere;
+}
+.follow_img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#btn-row{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+}
+button.active{
+  background-color: #007bff!important;
+  color: white!important;
+  padding: 5px 10px!important;
+  border: none!important;
+  border-radius: 8px!important;
+}
+@media screen and (max-width:767px){
+  .container{
+    max-width: 90%;
+    margin: auto;
+  }
+  .profile{
+    flex-direction: column;
+  }
+  .bio{
+    text-align: center;
+  }
+  .stats{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profile-details{
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.5em;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.media-container{
+  display: flex;
+  justify-content: center;
+}
+.media p{
+  width: 100%;
+  justify-content: center;
+}
+.media{
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-self: center;
+  gap: 15px;
+}
+/* .detailsContainer{
+display: flex;
+} */
+}
+@media screen and (max-width:576px){
+  .searchContainer input {
+    font-size: 12px;
+
+}
+.detailsContainer {
+
+  padding: 20px 10px;
+}
+}
